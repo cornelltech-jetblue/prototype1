@@ -1,0 +1,261 @@
+@font-face {
+  font-family: ProximaNovaBold;
+  src: url("../fonts/ProximaNovaBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: ProximaNovaRegular;
+  font-weight: bold;
+  src: url("../fonts/ProximaNovaRegular.otf") format("opentype");
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+h1, h2, h3, h4, h5, h6, div, ul {
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover, a:focus, a:visited {
+  color: #02458c;
+  text-decoration: none;
+}
+
+/* 
+1334-128-300*3-100*2
+*/
+
+/*
+101-20-81
+*/
+
+body {
+    background: #02458c;
+    margin: 0;
+    padding: 0;
+    font-family: ProximaNovaRegular, sans-serif;
+    width: 750px;
+}
+
+#status_bar {
+  background: url("../img/home_top_banner.png") no-repeat;
+  border-bottom: 1px solid #083158;
+  height: 128px;
+  position: fixed;
+  top: 0;
+  width: 750px;
+}
+
+#profile {
+  margin-top: 129px;
+  height: 300px;
+}
+
+#profile img {
+  float: left;
+  margin: 50px;
+}
+
+#profile #flight_info {
+  float: left;
+  margin-top: 50px;
+}
+
+#profile h4 {
+  color: #fff;
+  display: inline-block;
+  font-size: 50px;
+}
+
+#profile h4:first-child {
+  background: url('../img/bar.png') no-repeat 100px 18px;
+  padding-right: 140px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#profile tr:first-child td {
+  color: #4695d6;
+}
+
+#profile td {
+  color: #fff;
+  font-size: 32px;
+  padding: 7px 15px;
+}
+
+#profile td:first-child {
+  padding-left: 0;
+}
+
+#enough_time {
+  background: #31e571;
+  border-top: 1px solid #083158;
+  height: 380px;
+}
+
+#promo {
+  border-top: 1px solid #083158;
+  height: 220px;
+}
+
+#quicks {
+  border-top: 1px solid #083158;
+}
+
+#gate_explore {
+  background: #fff;
+  border-top: 1px solid #083158;
+  height: 120px;
+}
+
+    #gate_explore h2 {
+        float: left;
+        font-size: 32px;
+        font-weight: bold;
+        margin: 0;
+        letter-spacing: 2px;
+        line-height: 120px;
+        text-align: center;
+        width: 375px;
+    }
+    
+      #gate_explore h2 a {
+        color: #02458c;
+      }
+
+    #gate_explore h2:first-child {
+        color: #02458c;
+    }
+
+#quicks img {
+  margin-right: 20px;
+  padding: 20px 0;
+}
+
+#quicks a:first-child {
+  margin-left: 26px;
+}
+
+#quicks a:last-child {
+  margin-right: 0;
+}
+
+/*store list page*/
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  margin: none;
+  padding: none;
+}
+
+ul#filter_bar {
+  background: #02458c;
+  height: 75px;
+  margin: 129px 0 0 0;
+  position: fixed;
+  top: 0;
+  width: 750px;
+}
+
+  ul#filter_bar li {
+    border-right: 1px solid #083158;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    font-size: 32px;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 64px;
+  }
+
+  ul#filter_bar li:last-child {
+    border-right: none;
+  }
+
+ul#storefront_list {
+  background: #fff;
+  margin: 0;
+  margin: 204px 0 0 0;
+}
+  
+  ul#storefront_list li {
+    border-top: 1px solid #ccc;
+    display: block;
+    list-style-type: none;
+    padding: 20px;
+  }
+
+    ul#storefront_list li img {
+      float: left;
+      margin-right: 20px
+    }
+    
+    ul#storefront_list li div {
+      padding: 0 0 0 15px;
+    }
+
+      ul#storefront_list li div div.stars {
+        background: url('../img/stars.png') no-repeat;
+        display: inline-block;
+        float: right;
+        height: 39px;
+        width: 165px;
+      }
+
+      ul#storefront_list li h4 {
+        color: #6ac0ff;
+        display: inline-block;
+        /*font-family: ProximaNovaBold, sans-serif;*/
+        font-size: 32px;
+        line-height: 39px;
+      }
+
+      ul#storefront_list li div.mid_row {
+        margin: 20px 0 15px 0;
+      }
+      
+      ul#storefront_list li div.low_row h5 {
+        color: #073;
+        font-style: italic;
+      }
+
+      ul#storefront_list li h5 {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 28px;
+      }
+
+      ul#storefront_list li h6 {
+        display: inline-block;
+        font-weight: bold;
+        float: right;
+        font-size: 28px;
+        margin-right: 20px;
+      }
