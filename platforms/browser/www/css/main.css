@@ -2,11 +2,11 @@
 /*
 
 dark blue : #02458c
-border on dark blue : #083158
-light blue : #
+border on dark blue : #658db9
+light blue : #6ac0ff
 green : #31e571
-yellow : #
-red : #
+yellow : #ff9700
+red : #d12844
 
 */
 /* colors end */
@@ -33,31 +33,38 @@ h1, h2, h3, h4, h5, h6, div, ul {margin: 0; padding: 0;}
 /* command center page start */
 a, a:hover, a:focus, a:visited {color: #02458c; text-decoration: none;}
 
-body {background: #02458c; margin: 0; padding: 0; font-family: ProximaNovaRegular; width: 750px;}
+body {background: #02458c; color: #fff; font-size: 30px; margin: 0; padding: 0; 
+  font-family: ProximaNovaRegular; width: 750px;}
 
-#status_bar {background: url("../img/home_top_banner.png") no-repeat; border-bottom: 1px solid #083158; 
-  height: 128px; position: fixed; top: 0; width: 750px;}
+#status_bar {background: url("../img/home_top_banner.png") no-repeat; border-bottom: 1px solid #658db9; 
+  height: 128px; position: fixed; top: 0; width: 750px; z-index: 2;}
 
-#profile {margin-top: 129px; height: 300px;}
+#profile {margin-top: 129px; height: 280px;}
   #profile img {float: left; margin: 50px;}
   #profile #flight_info {float: left; margin-top: 50px;}
-    #flight_info h4 {color: #fff; display: inline-block; font-size: 50px;}
-    #flight_info h4:first-child {background: url('../img/bar.png') no-repeat 100px 18px; padding-right: 140px;}
-    #flight_info table {border-collapse: collapse; margin-top: 10px;}
-      #flight_info tr:first-child td {color: #4695d6;}
-        #flight_info td {color: #fff; font-size: 32px; padding: 7px 15px;}
-        #flight_info td:first-child {padding-left: 0;}
+    #flight_info > div:first-child {padding: 0 176px;}
+      #flight_info h4 {color: #fff; float: left; font-size: 50px; letter-spacing: 2px}
+    #flight_info div#status_details {width: 750px;}
+      #flight_info div#status_details div {float: left; padding-top: 30px; width: 187px} /*250px width for 3*/
+        #flight_info h5 {color: #fff; font-size: 32px; text-align: center;}
+        #flight_info h5:first-child {color: #6ac0ff; margin-bottom: 7px;}
+        #flight_info img {position: relative; margin: 17px 50px 30px 50px; top: 0px; z-index: 1;}
 
-#enough_time {background: #31e571; border-top: 1px solid #083158; height: 380px;}
 
-#promo {border-top: 1px solid #083158; height: 220px;}
+#enough_time {background: #31e571; border-top: 1px solid #658db9; height: 420px;}
 
-#quicks {border-top: 1px solid #083158;}
+#promo {border-top: 1px solid #658db9; height: 380px;}
+  #promo > div {background: url('../img/s1/uber.png') top 120px left 75px no-repeat; padding: 75px 0 0 260px;}
+    #promo h5, #promo p {color: #6ac0ff;}
+    #promo h5 {font-size: 40px;}
+    #promo p {font-size: 36px; line-height: .7em; font-style: italic;}
+
+#quicks {border-top: 1px solid #658db9;}
   #quicks a:first-child {margin-left: 26px;}
   #quicks a:last-child {margin-right: 0;}
     #quicks img {margin-right: 20px; padding: 20px 0;}
 
-#gate_explore {background: #fff; border-top: 1px solid #083158; height: 120px;}
+#gate_explore {background: #fff; border-top: 1px solid #658db9; height: 120px;}
 
     #gate_explore h2 {float: left; font-size: 32px; font-weight: bold; margin: 0; letter-spacing: 2px; 
       line-height: 120px; text-align: center; width: 375px;}
@@ -74,7 +81,7 @@ ul#filter_bar {background: #02458c; height: 75px; margin: 129px 0 0 0; position:
     font-size: 31px; height: 75px; line-height: 75px; padding: 0 64px;}
   ul#filter_bar li:last-child {border-right: none;}
 
-ul#storefront_list {background: #fff; margin: 0; margin: 204px 0 0 0;}
+ul#storefront_list {background: #fff; color: #000; margin: 0; margin: 204px 0 0 0;}
   ul#storefront_list li {border-top: 1px solid #ccc; display: block; list-style-type: none; padding: 20px;}
     ul#storefront_list div.mid_row {margin: 20px 0 15px 0;}
     ul#storefront_list div {padding: 0 0 0 15px;}
