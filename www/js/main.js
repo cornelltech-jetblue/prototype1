@@ -15,6 +15,11 @@ function changeClass() {
 	}
 }
 
+function boardingAlert() {
+	alert('Boarding will begin in: 05 minutes\n\n\nPlease make your way to the gate');
+}
+
 $(document).ready(function(){
 	$('#enough_time').on('click', changeClass);
+	$('#h4Alert').on('click', boardingAlert);
 });
