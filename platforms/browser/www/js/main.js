@@ -14,3 +14,7 @@ function changeClass() {
 			break;
 	}
 }
+
+$(document).ready(function(){
+	$('#enough_time').on('click', changeClass);
+});
