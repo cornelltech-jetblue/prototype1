@@ -49,7 +49,7 @@ body {background: #02458c; color: #fff; font-size: 30px; margin: 0; padding: 0;
       #flight_info div#status_details div {float: left; padding-top: 30px; width: 187px} /*250px width for 3*/
         #flight_info h5 {color: #fff; font-size: 32px; text-align: center;}
         #flight_info h5:first-child {color: #6ac0ff; margin-bottom: 7px;}
-        #flight_info img {position: relative; margin: 17px 50px 30px 50px; top: 0px; z-index: 1;}
+        #flight_info img {position: relative; margin: 21px 50px 30px 50px; top: 0px; z-index: 1;}
 
 #enough_time {height: 420px;}
 
@@ -96,20 +96,22 @@ ul#arrival_list {margin: 129px 0 0 0;}
       ul#arrival_list #shuttle {background: url('../img/exit/bus90.png') 35px center no-repeat}
       ul#arrival_list #uber {background: url('../img/exit/car90.png') 35px center no-repeat}
 
+      ul#arrival_list a, a:hover, a:focus, a:visited {color: #0467c6;}
+
 /* transit list fin */
 
 /* store list page */
 ul {padding: 0;}
   li {list-style-type: none; margin: none; padding: none;}
 
-ul#filter_bar {background: #02458c; height: 75px; margin: 129px 0 0 0; position: fixed; top: 0; width: 750px;}
-  ul#filter_bar li {border-right: 1px solid #083158; color: #fff; display: inline-block; float: left;
-    font-size: 31px; height: 75px; line-height: 75px; padding: 0 64px;}
-  ul#filter_bar li:last-child {border-right: none;}
+ul#filter_bar {background: red url('../img/push_group_3.png'); height: 148px; margin: 129px 0 0 0; position: fixed; top: 0; width: 750px;}
 
-ul#storefront_list {background: #fff; color: #000; margin: 0; margin: 204px 0 0 0;}
+ul#storefront_list {background: #fff; color: #000; margin: 0; margin: 277px 0 0 0;}
   ul#storefront_list li {border-top: 1px solid #ccc; display: block; list-style-type: none; padding: 20px;}
+  ul#storefront_list li em {font-style: normal; color: #6ac0ff;}
+  ul#storefront_list li em.nono {color: #d12844;}
     ul#storefront_list div.mid_row {margin: 20px 0 15px 0;}
+    ul#storefront_list div.mid_row h5 {color: #aaa;}
     ul#storefront_list div {padding: 0 0 0 15px;}
       ul#storefront_list div#transit_prices {float: right;}
         ul#storefront_list div#transit_prices h6 {clear: both; display: block; position: relative; top: 20px;   }
