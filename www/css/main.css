@@ -4,6 +4,7 @@
 dark blue : #02458c
 border on dark blue : #658db9
 light blue : #6ac0ff
+text blue : #0467c6
 green : #31e571
 yellow : #ff9700
 red : #d12844
@@ -50,7 +51,6 @@ body {background: #02458c; color: #fff; font-size: 30px; margin: 0; padding: 0;
         #flight_info h5:first-child {color: #6ac0ff; margin-bottom: 7px;}
         #flight_info img {position: relative; margin: 17px 50px 30px 50px; top: 0px; z-index: 1;}
 
-
 #enough_time {background: #31e571; border-top: 1px solid #658db9; height: 420px;}
 
 #promo {border-top: 1px solid #658db9; height: 380px;}
@@ -65,12 +65,34 @@ body {background: #02458c; color: #fff; font-size: 30px; margin: 0; padding: 0;
     #quicks img {margin-right: 20px; padding: 20px 0;}
 
 #gate_explore {background: #fff; border-top: 1px solid #658db9; height: 120px;}
-
     #gate_explore h2 {float: left; font-size: 32px; font-weight: bold; margin: 0; letter-spacing: 2px; 
       line-height: 120px; text-align: center; width: 375px;}
       #gate_explore h2 a {color: #02458c;}
       #gate_explore h2 a:first-child {color: #02458c;}
 /* command center page fin */
+
+/* transit list */
+ul#arrival_list {margin: 129px 0 0 0;}
+  ul#arrival_list li {background: #fff; border-bottom: 1px solid #ddd; color: #000; height: 200px;}
+    ul#arrival_list li div {float: left; height: 100%;}
+    ul#arrival_list li div:first-child {background: url('../img/exit/train90.png') 35px center no-repeat;
+      padding: 0 0 0 160px;}
+      ul#arrival_list li div:first-child h4 {color: #0467c6; font-size: 38px; padding: 55px 0 10px 0;}
+      ul#arrival_list li div:first-child h5 {font-size: 30px;}
+    ul#arrival_list li div:last-child {float: right; font-size: 40px; padding: 0px 50px;}
+      ul#arrival_list li div:last-child h6 {color: #6ac0ff;}
+      ul#arrival_list li div:last-child h6:first-child {margin: 57px 0 10px 0; font-size: 30px; 
+        text-align: right;}
+      ul#arrival_list li div:last-child h6:last-child {font-size: 36px; text-align: right;}
+      
+      ul#arrival_list #train {background: url('../img/exit/train90.png') 35px center no-repeat;}
+      ul#arrival_list #bus {background: url('../img/exit/bus90.png') 35px center no-repeat}
+      ul#arrival_list #car {background: url('../img/exit/car90.2.png') 35px center no-repeat}
+      ul#arrival_list #taxi {background: url('../img/exit/cab90.png') 35px center no-repeat}
+      ul#arrival_list #shuttle {background: url('../img/exit/bus90.png') 35px center no-repeat}
+      ul#arrival_list #uber {background: url('../img/exit/car90.png') 35px center no-repeat}
+
+/* transit list fin */
 
 /* store list page */
 ul {padding: 0;}
@@ -85,6 +107,8 @@ ul#storefront_list {background: #fff; color: #000; margin: 0; margin: 204px 0 0 
   ul#storefront_list li {border-top: 1px solid #ccc; display: block; list-style-type: none; padding: 20px;}
     ul#storefront_list div.mid_row {margin: 20px 0 15px 0;}
     ul#storefront_list div {padding: 0 0 0 15px;}
+      ul#storefront_list div#transit_prices {float: right;}
+        ul#storefront_list div#transit_prices h6 {clear: both; display: block; position: relative; top: 20px;   }
       ul#storefront_list div div.stars {background: url('../img/stars.png') no-repeat; display: inline-block;
         float: right; height: 39px; width: 165px; }
         ul#storefront_list div.top_row h4 {color: #6ac0ff; display: inline-block; font-size: 32px; 
