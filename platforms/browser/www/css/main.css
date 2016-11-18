@@ -36,9 +36,16 @@ a, a:hover, a:focus, a:visited {color: #02458c; text-decoration: none;}
 
 body {background: #02458c; color: #fff; font-size: 30px; margin: 0; padding: 0; 
   font-family: ProximaNovaRegular; width: 750px;}
+  body#index div {background: url('../img/home.png'); height: 1334px;}
 
-#status_bar {background: url("../img/home_top_banner.png") no-repeat; border-bottom: 1px solid #658db9; 
-  height: 128px; position: fixed; top: 0; width: 750px; z-index: 2;}
+#status_bar {background: #02458c; border-bottom: 1px solid #658db9; height: 128px; position: fixed; 
+  top: 0; width: 750px; z-index: 3;}
+  #status_bar div#spacer {background: #fff; height: 41px;}
+  
+  #status_bar img {padding: 25px 0 0 30px;}
+  #status_bar h4 {font-size: 34px; line-height: 34px; text-align: center; position: relative; 
+    text-transform: uppercase; bottom: 30px; width: 750px;}
+  #status_bar h4.trans, #status_bar h4.explore {bottom: 40px;}
 
 #profile {margin-top: 129px; height: 280px;}
   #profile img {float: left; margin: 50px;}
@@ -106,7 +113,7 @@ ul#arrival_list {margin: 129px 0 0 0;}
 ul {padding: 0;}
   li {list-style-type: none; margin: none; padding: none;}
 
-ul#filter_bar {background: red url('../img/push_group_3.png'); height: 148px; margin: 129px 0 0 0; position: fixed; top: 0; width: 750px;}
+ul#filter_bar {background: url('../img/push_group_3.png'); height: 148px; margin: 129px 0 0 0; position: fixed; top: 0; width: 750px;}
 
 ul#storefront_list {background: #fff; color: #000; margin: 0; margin: 277px 0 0 0;}
   ul#storefront_list li {border-top: 1px solid #ccc; display: block; list-style-type: none; padding: 20px;}
@@ -127,16 +134,13 @@ ul#storefront_list {background: #fff; color: #000; margin: 0; margin: 277px 0 0 
         margin-right: 20px;}
 
 /*----------MAP PAGE---------*/
-#status_bar.title {background: #02458C;}
-#status_bar.title h4 {text-align: center; position: relative; top: -35px;}
-#status_bar img {margin: 40px 0 0 40px;}
-
 #map {padding-top: 350px;}
 #popover {margin-top: 128px; height: 350px; background: #fff; color: #000; position: fixed; width: 750px;}
-#popover h5 {color: #004990; font-style: bold; padding: 0; margin: 0;}
-#popover span {color: #bbb; font-size: 0.7em; margin: 0; padding: 0;}
+#popover h4 {font-size: 34px;}
+#popover h5 {color: #004990;}
+#popover span {color: #bbb; font-size: 28px;}
 .popover-left {float: left; padding: 40px 40px 0 40px;}
 .popover-right {margin-left: 450px; padding: 40px 40px 0 40px;}
-.popover-right p {font-size: 24px;}
-.popover-p {padding: 0 40px; margin: 0;}
+.popover-right p {font-size: 28px;}
+.popover-p {padding: 0 40px; margin: 0; line-height: 1.7em;}
 #popover > img {margin-left: 45%;}
