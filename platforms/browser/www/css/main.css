@@ -46,12 +46,14 @@ body {background: #02458c; color: #fff; font-size: 30px; margin: 0; padding: 0;
     #flight_info > div:first-child {padding: 0 176px;}
       #flight_info h4 {color: #fff; float: left; font-size: 50px; letter-spacing: 2px}
     #flight_info div#status_details {width: 750px;}
-      #flight_info div#status_details div {float: left; padding-top: 30px; width: 187px} /*250px width for 3*/
+      #flight_info div#status_details div {float: left; padding-top: 30px; width: 187px}
+      #flight_info div#status_details.in_threes div {width: 250px;}
         #flight_info h5 {color: #fff; font-size: 32px; text-align: center;}
         #flight_info h5:first-child {color: #6ac0ff; margin-bottom: 7px;}
         #flight_info img {position: relative; margin: 21px 50px 30px 50px; top: 0px; z-index: 1;}
 
 #enough_time {border-top: 1px solid #658db9; height: 420px;}
+#enough_time_post_board {background: #6ac0ff; border-top: 1px solid #658db9; height: 420px; padding-top: 50px;}
 
 .green {background: #31e571;}
 .amber {background: #ff9700;}
