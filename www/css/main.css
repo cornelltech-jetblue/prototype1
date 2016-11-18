@@ -125,9 +125,17 @@ ul#storefront_list {background: #fff; color: #000; margin: 0; margin: 204px 0 0 
 		
 /*----------MAP PAGE---------*/
 
-#popover {margin-top: 128px; height: 350px; background: #fff; color: #000;}
+#status_bar.title {background: #02458C;}
+#status_bar.title h4 {text-align: center; position: relative; top: -35px;}
+#status_bar img {margin: 40px 0 0 40px;}
+
+#map {padding-top: 350px;}
+#popover {	margin-top: 128px; height: 350px; 
+			background: #fff; color: #000; position: fixed;
+			width: 750px;
+			}
 #popover h5 {color: #004990; font-style: bold; padding: 0; margin: 0;}
-#popover span {color: #ddd; font-size: 0.5em; margin: 0; padding: 0;}
+#popover span {color: #bbb; font-size: 0.7em; margin: 0; padding: 0;}
 .popover-left {float: left; padding: 40px 40px 0 40px;}
 .popover-right {margin-left: 450px; padding: 40px 40px 0 40px;}
 .popover-right p {font-size: 24px;}
