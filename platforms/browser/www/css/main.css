@@ -53,6 +53,10 @@ body {background: #02458c; color: #fff; font-size: 30px; margin: 0; padding: 0;
 
 #enough_time {background: #31e571; border-top: 1px solid #658db9; height: 420px;}
 
+.green {background: #31e571;}
+.amber {background: #DFA941;}
+.red {background: #E83A1D;}
+
 #promo {border-top: 1px solid #658db9; height: 380px;}
   #promo > div {background: url('../img/s1/uber.png') top 120px left 75px no-repeat; padding: 75px 0 0 260px;}
     #promo h5, #promo p {color: #6ac0ff;}
