@@ -67,5 +67,7 @@ $(document).ready(function(){
 			top: '+=30px'
 		}, 11000
 	);
+
+	// $('#promo > div').slick();
 });
 

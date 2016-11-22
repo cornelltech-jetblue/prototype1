@@ -90,7 +90,8 @@ body {background: #02458c; color: #fff; font-size: 30px; margin: 0; padding: 0;
     #promo p {font-size: 36px; font-style: italic;}
     #promo.inflight p {line-height: 1.2em;}
   #promo.inflight > div {background: url('../img/food120.png') top 120px left 75px no-repeat; padding: 25px 0 0 260px;}
-  #promo.preflight > div {background: url('../img/baby120.png') top 120px left 75px no-repeat; padding: 65px 0 0 260px;}
+  #promo.preflight > div {padding: 65px 0 0 260px;}
+    #promo.preflight > div img {}
 
 #quicks {border-top: 1px solid #658db9;}
   #quicks a:first-child {margin-left: 26px;}
