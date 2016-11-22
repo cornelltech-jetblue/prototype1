@@ -39,8 +39,24 @@ function till_gate() {
 	}
 }
 
+function till_land() {
+	cur = parseInt($("#till_land h3 span").html());
+	if (cur > 0) {
+		$("#till_land h3 span").html(cur - 1);
+	}
+}
+
 $(document).ready(function(){
 	$('#enough_time').on('click', changeClass);
 	var counter1 = setInterval(till_boarding, 200);
 	var counter2 = setInterval(till_gate, 3000);
+	var counter3 = setInterval(till_land, 500);
+
+	$("#enough_time_post_board img").animate(
+		{
+			left: '+=100px',
+			top: '+=30px'
+		}, 11000
+	);
 });
+
