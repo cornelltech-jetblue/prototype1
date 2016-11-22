@@ -15,11 +15,13 @@ function changeClass() {
 	}
 }
 
-function boardingAlert() {
-	alert('Boarding will begin in: 5 minutes\n\n\nPlease make your way to the gate');
+function countdown(sec) {
+	$("#till_boarding h3").html(sec-- + " min");
 }
 
 $(document).ready(function(){
-	// $('#enough_time').on('click', changeClass);
-	// $('#h4Alert').on('click', boardingAlert);
+	$('#enough_time').on('click', changeClass);
+	
+	sec = 53;
+	var counter = setInterval(countdown(sec--), 1000);
 });
