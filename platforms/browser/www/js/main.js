@@ -46,11 +46,20 @@ function till_land() {
 	}
 }
 
+
+function till_baggage() {
+	cur = parseInt($("#till_baggage h3 span").html());
+	if (cur > 0) {
+		$("#till_baggage h3 span").html(cur - 1);
+	}
+}
+
 $(document).ready(function(){
 	$('#enough_time').on('click', changeClass);
 	var counter1 = setInterval(till_boarding, 200);
 	var counter2 = setInterval(till_gate, 3000);
 	var counter3 = setInterval(till_land, 500);
+	var counter4 = setInterval(till_baggage, 500);
 
 	$("#enough_time_post_board img").animate(
 		{

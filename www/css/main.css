@@ -65,12 +65,19 @@ body {background: #02458c; color: #fff; font-size: 30px; margin: 0; padding: 0;
     #enough_time div:last-child img {padding-left: 163px;}
     #enough_time div h3 {font-size: 40px; margin: 20px 0 5px 0; text-align: center;}
     #enough_time div h5 {color: #333; font-size: 32px; text-align: center;}
-#enough_time_post_board {background: #6ac0ff url('../img/bg_on_flight.png') center no-repeat; height: 380px; 
-margin-top: 35px; position: relative;}
-  #enough_time_post_board img {position: absolute; left: 450px; top: 85px;}
-  #enough_time_post_board div {padding-top: 200px;}
-    #enough_time_post_board h6 {color: #333; font-size: 30px; letter-spacing: 2px; text-align: center;}
-    #enough_time_post_board h3 {font-size: 40px; text-align: center;}
+#enough_time_post_board {background: #6ac0ff; margin-top: 35px; height: 380px;}
+#enough_time_post_board.flying {background: #6ac0ff url('../img/bg_on_flight.png') center no-repeat; 
+  position: relative;}
+  #enough_time_post_board.flying img {position: absolute; left: 450px; top: 85px;}
+  #enough_time_post_board.flying div {padding-top: 200px;}
+    #enough_time_post_board.flying h6 {color: #333; font-size: 30px; letter-spacing: 2px; text-align: center;}
+    #enough_time_post_board.flying h3 {font-size: 40px; text-align: center;}
+#enough_time_post_board.landed {}
+  #enough_time_post_board.landed div {float: left; height: 380px; width: 375px;}
+    #enough_time_post_board.landed div img {padding:85px 0 0 131px;}
+    #enough_time_post_board.landed div:last-child img {padding: 108px 0 0 135px;}
+    #enough_time_post_board.landed div h3 {font-size: 40px; margin: 20px 0 5px 0; text-align: center;}
+    #enough_time_post_board.landed div h5 {color: #333; font-size: 32px; text-align: center;}
 
 .green {background: #31e571;}
 .amber {background: #ff9700;}
